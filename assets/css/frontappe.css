@@ -1,0 +1,304 @@
+nav {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    padding: 20px 100px;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+    justify-content: space-between;
+}
+
+ul {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav li {
+    margin-left: 65px; 
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.tukilo {
+    height: 44px;
+    width: 120px;
+} 
+
+.downbut a {
+    background-color: #04114ddc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.downbut a:hover {
+    background-color: slateblue;
+}
+
+/* Menu Toggle for Mobile */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 4px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        padding: 20px;
+    }
+
+    nav > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar-nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* First Container */
+.first-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 600px;
+    margin-top: 90px;
+    max-width: 1400px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+}
+
+.firstbody {
+    flex: 1;
+    padding: 20px;
+    margin: 1px;
+}
+
+/* First page buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #04114ddc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.web-btn {
+    background-color: #04114ddc;
+}
+
+.web-btn:hover {
+    background-color: slateblue;
+}
+
+.tutorial-btn {
+    background-color: #fff;
+    color: #04114ddc;
+    border: 2px solid #04114ddc;
+}
+
+.tutorial-btn:hover {
+    background-color: #93a8e0a8;
+}
+
+.tutorial-btn i {
+    color: #04114ddc;
+}
+
+.app-download {
+    height: 55px;
+    width: 180px;
+    margin-right: 20px;
+}
+
+.dos {
+    margin-left: 90px;
+    font-size: 20px;
+}
+
+.products img {
+    max-width: 80%;
+    max-height: 100%;
+}
+
+.products {
+    display: block;
+    float: right;
+    margin-right: 30px;
+}
+
+.firstbody-containing {
+    margin-top: 70px;
+    margin-left: 90px;
+}
+
+@media (max-width: 768px) {
+    .first-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .products {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px; /* Add margin to separate from other content */
+    }
+
+    .firstbody-containing {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .dos {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .app-download {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* WOrd Art of */
+.wordart {
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  
+  .wordart.slate {
+      transform: scale(1, 1.5);
+      -webkit-transform: scale(1, 1.5);
+      -moz-transform: scale(1, 1.5);
+      -o-transform: scale(1, 1.5);
+      -ms-transform: scale(1, 1.5);
+  }
+  
+  .wordart.slate .welcome-text{
+      font-family: Times, 'Times New Roman', serif;
+      font-weight: normal;
+      color: #04114ddc;
+      text-shadow: 0.03em 0.03em 0px #B3B3B3;
+  }
+
+  /* Responsive First Container */
+@media (max-width: 768px) {
+    .first-container {
+        flex-direction: column;
+    }
+
+    .firstbody {
+        margin: 5px 0;
+    }
+}
+
+/* Info Section Css */
+.info-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    background-color: rgb(238, 235, 243);
+    padding: 60px;
+    max-width: 1400px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.info-item {
+    text-align: center;
+    color: #2d3436;
+    margin: 0 89px; /* Add horizontal margin for spacing */
+}
+
+.info-item h2 {
+    color: #04114ddc;
+    font-size: 2em;
+    margin: 0;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #636e72;
+}
+
+.star {
+    color: #04114ddc;
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .info-item {
+        margin-bottom: 20px;
+    }
+}

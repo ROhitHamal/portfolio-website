@@ -1,0 +1,363 @@
+/* -- Our Business Content CSS -- */
+
+.our-business-content {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.our-business-text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.our-business-text-content h2 {
+    font-size: 2em;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+
+.our-business-text-content h2 span {
+    color: #180875b6;
+}
+
+.our-business-text-content p {
+    font-size: 1.2em;
+    color: #636e72;
+}
+
+.our-business-image-content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-business-image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .our-business-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .our-business-text-content, .our-business-image-content {
+        max-width: 100%;
+    }
+
+    .our-business-text-content {
+        margin-bottom: 20px;
+    }
+}
+
+/*  -- Slides and wt can u do part CSS --   */
+.features-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(238, 235, 243); 
+    max-width: 1400px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.slider {
+    flex: 0 0 40%;
+    max-width: 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.features-content {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.features-content h1 {
+    font-size: 2em;
+    color: #2d3436;
+    padding-left: 55px;
+}
+
+.features-content p {
+    font-size: 1.2em;
+    color: #636e72;
+    padding-left: 60px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+    padding-left: 10px;
+}
+
+.features-list ul {
+    list-style-type: none;
+    padding: 0;
+    color: #2d3436;
+}
+
+.features-list ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.5;
+}
+
+.features-list ul li:before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #180875b6;
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .slider, .features-content {
+        max-width: 100%;
+    }
+
+    .features-content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .features-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0; /* Remove extra padding */
+    }
+
+    .features-list ul {
+        margin-bottom: 20px;
+    }
+
+    .features-content h1, .features-content p {
+        padding-left: 0; /* Remove padding for smaller screens */
+    }
+}
+
+/* Helping users part ------*/
+.helping-user-container {
+    width: 80%;
+    max-width: 1200px; /* Add this */
+    margin: 0 auto;    /* Add this */
+    padding: 20px;
+    justify-content: center;
+}
+
+.helping-user-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.highlight {
+    color: #00bfa5;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center; /* Center the testimonial divs horizontally */
+    gap: 40px; /* Add space between the testimonial divs */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Add this for wrapping on smaller screens */
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 40px); /* Adjust width to account for the gap */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    margin-bottom: 20px; /* Add space between rows on smaller screens */
+}
+
+.quote {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.comma {
+    color: #00b894;
+    font-size: 4em;
+    font-family: 'Times New Roman';
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.user-info h3 {
+    margin: 0;
+    color: #00bfa5;
+}
+
+.user-info p {
+    margin: 5px 0 0;
+    color: #777;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonial {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .testimonials {
+        margin-left: 0; /* Reset margin */
+    }
+}
+
+/*  -- Youtube and News Part-- */
+.youtube-container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+ /*   background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+}
+
+.youtube-container-heading{
+    margin-left: 250px;
+}
+
+.content-of {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.video {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.video p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.source {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.news {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.news-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .content-of {
+        flex-direction: column;
+    }
+
+    .video, .news {
+        width: 100%;
+    }
+
+    .video iframe {
+        height: 300px;
+    }
+
+    .content-of h2 {
+        margin-left: 250px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .video iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video iframe {
+        height: 200px;
+    }
+
+    .news-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
