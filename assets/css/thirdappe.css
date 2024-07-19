@@ -22,7 +22,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 400px;
+    max-width: 350px;
     height: 400px;
     text-align: left;
     text-decoration: none;
@@ -40,7 +40,7 @@
 .our-blog .blog-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image fits perfectly */
+    object-fit: contain; /* Ensures the image fits perfectly */
 }
 
 .our-blog .blog-content {
@@ -54,6 +54,8 @@
 .our-blog .blog-card h3 {
     font-size: 1.2em;
     margin: 0 0 10px 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 
@@ -329,7 +331,7 @@
 
 .contact-form button {
     padding: 10px;
-    background-color: #00c853;
+    background-color: darkslateblue;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -338,7 +340,7 @@
 }
 
 .contact-form button:hover {
-    background-color: #009624;
+    background-color: slateblue;
 }
 
 /* Responsive Styles */

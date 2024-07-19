@@ -1,5 +1,8 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarNav = document.querySelector('.navbar-nav');
 
-document.getElementById('mobile-menu').addEventListener('click', function() {
-    const nav = document.querySelector('.navbar-nav');
-    nav.classList.toggle('active');
+    mobileMenu.addEventListener('click', function() {
+        navbarNav.classList.toggle('active');
+    });
 });

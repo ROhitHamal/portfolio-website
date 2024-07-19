@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tukey | About</title>
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbarNav = document.querySelector('.navbar-nav');
+
+        mobileMenu.addEventListener('click', function() {
+        navbarNav.classList.toggle('active');
+        });
+    });
+    </script>
+</head>
+<body>  
+    <!--Navigation Bar -->
+    <nav>
+        <div class="navigation-body">
+            <div class="logo">
+                <a href="index.html"><img class="tukilo" src="/assets/img/tukilogo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-nav">
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+            </ul>
+        </div> 
+    </nav>
+
+<!-- Main-->
+    <div class="main-container">
+        <br><br><br>
+        <p style="color: rgba(80, 80, 190, 0.822); font-size: 20px;">Here nothing is to show</p><br><br><br>
+        <p style="color: rgba(80, 80, 190, 0.822); font-size: 20px;">About is not Abouting<br> 🤪🤪</p><br><br><br>
+    </div><br><br>
+ 
+    <!-- Footer part-->
+    <footer class="footer">
+        <div class="footer-left">
+            <p style="color: rgb(49, 57, 173);font-size: 14px;">FIND US ON</p>
+            <div class="social-icons">
+                <a href="#"><img src="/assets/img/icons/facebook_blue.svg" alt="Facebook"></a>
+                <a href="#"><img src="/assets/img/icons/instagram_blue.svg" alt="Instagram"></a>
+                <a href="#"><img src="/assets/img/icons/linkedin_blue.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="#">Home</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+<!--Footer end-->
+</body>
+</body>
+</html>

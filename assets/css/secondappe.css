@@ -4,10 +4,11 @@
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center;
-    padding: 60px;
+    padding: 10px;
     text-align: center;
     max-width: 1200px; /* Limit the maximum width */
     margin: 0 auto; /* Center the section */
+
 }
 
 .our-business-text-content {
@@ -39,8 +40,8 @@
 }
 
 .our-business-image-content img {
-    max-width: 100%;
-    height: auto;
+    max-width: 70%;
+    max-height: 60%;
 }
 
 @media (max-width: 768px) {
@@ -94,13 +95,13 @@
 .features-content h1 {
     font-size: 2em;
     color: #2d3436;
-    padding-left: 55px;
+    padding-left: 7px;
 }
 
 .features-content p {
     font-size: 1.2em;
     color: #636e72;
-    padding-left: 60px;
+    padding-left: 10px;
 }
 
 .features-list {
@@ -177,7 +178,7 @@
 }
 
 .highlight {
-    color: #00bfa5;
+    color: #180875b6;
 }
 
 .testimonials {
@@ -205,7 +206,7 @@
 }
 
 .comma {
-    color: #00b894;
+    color: #180875b6;
     font-size: 4em;
     font-family: 'Times New Roman';
 }
@@ -216,7 +217,7 @@
 }
 
 .user-info img {
-    border-radius: 50%;
+    border-radius: 10%;
     width: 120px;
     height: 120px;
     margin-right: 20px;
@@ -224,7 +225,7 @@
 
 .user-info h3 {
     margin: 0;
-    color: #00bfa5;
+    color: #180875b6;
 }
 
 .user-info p {
@@ -263,23 +264,23 @@
 .content-of {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
 }
 
-.video {
+.youtube-video {
     width: 70%;
     display: flex;
     flex-direction: column;
 }
 
-.video iframe {
+.youtube-video iframe {
     width: 100%;
     height: 500px;
     border: none;
 }
 
-.video p {
+.youtube-video p {
     margin-top: 10px;
     font-size: 16px;
     color: #555;
@@ -325,11 +326,11 @@
         flex-direction: column;
     }
 
-    .video, .news {
+    .youtube-video, .news {
         width: 100%;
     }
 
-    .video iframe {
+    .youtube-video iframe {
         height: 300px;
     }
 
@@ -340,13 +341,13 @@
 }
 
 @media (max-width: 768px) {
-    .video iframe {
+    .youtube-video iframe {
         height: 250px;
     }
 }
 
 @media (max-width: 480px) {
-    .video iframe {
+    .youtube-video iframe {
         height: 200px;
     }
 
